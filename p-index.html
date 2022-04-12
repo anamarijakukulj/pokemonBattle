@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+        <meta name="description" content="Pokemon battle app">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="pokemon, battle, app">
+        <meta name="author" content="Anamarija Kukulj">
+
+        <title>Pokemon Battle</title>
+
+        <link rel="stylesheet" href="p-style.css">
+    </head>
+
+    <body>
+        <div class="wrapped">
+
+          <nav id="navbar">
+              <img src="poke_logo.png" alt="Pokemon logo">
+              <button id="pokemonlist_button"  type="button" style="visibility: visible;">Pokemon list</button>
+          </nav>
+
+          <div class="first_screen" style="visibility: visible;">
+              <div id="p_logo"><img src="./image/img_poke_logo.svg" alt="Pokemon logo">
+                 <button id="start" type="submit" formaction="">Start pokemon battle</button>
+              </div>
+         </div>
+
+          <div class="second_screen" style="visibility: hidden;">
+            <div id="first_pokemon">
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                   <div id="shadow"></div>
+                </div>
+            </div>
+            <h1 id="vs">VS</h1>
+            <div id="second_pokemon" >
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                   <div id="shadow"></div>
+                </div>
+            </div>
+          </div>
+
+          <div class="third_screen" style="visibility:hidden;">
+            <h1 id="winner">Winner!</h1>
+            <div id="w_card">
+              <div id="p_card">
+                  <div id="card">
+                      <div id="content">
+                         <img id="c_pokemon">
+                         <p id="p_name"></p>
+                      </div>
+                 </div>
+                 <div id="shadow"></div>
+              </div>
+            </div>
+            <div id="end_buttons">
+                <div>
+                <button id="new_battle">Start new battle</button>
+                </div>
+                <div>
+                <button id="end_game">End game</button>
+                </div>
+            </div>
+           </div>
+
+           <div class="pokemon_list" style="visibility: hidden;">
+            <div id="container">
+                <ul>
+                <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+            </li>
+                <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+            </li>
+                <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+            </li>
+                <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+            </li>
+            <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+                </li>
+                <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+            </li>
+            <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+            </li>
+            <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+            </li>
+            <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+            </li>
+            <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+            </li>
+            <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div id="p_card">
+                    <div id="card">
+                        <div id="content">
+                           <img id="c_pokemon">
+                           <p id="p_name"></p>
+                        </div>
+                   </div>
+                </div>
+            </li>
+        </ul>
+
+        <div id="slide">
+
+        </div>
+        </div>
+
+        <div class="p_stats" style="visibility: hidden;">
+            <button id="back">< Back</button>
+            <div id="naming">
+               <h1 id="pokemon_name">po</h1>
+            </div>
+            <div id="species"><p>species</p></div>
+            <div id="abilities">
+                <p id="rec">Abilities</p>
+                <div id="labels"><p id="label">dgdsgb</p></div>
+            </div>
+            <div id="statistics">
+                <p id="rec">Stats</p>
+                <div id="stats_one">
+                    <div id="stats">
+                        <p id="stats_name"></p>
+                        <p id="base_state"></p>
+                        <p id="effort"></p>
+                    </div>
+                </div>
+
+                <div id="stats_two">
+                   <div id="stats">
+                       <p id="stats_name"></p>
+                       <p id="base_state"></p>
+                       <p id="effort"></p>
+                   </div>
+                </div>
+
+                <div id="stats_three">
+                   <div id="stats">
+                       <p id="stats_name"></p>
+                       <p id="base_state"></p>
+                       <p id="effort"></p>
+                   </div>
+                </div>
+
+                <div id="stats_four">
+                   <div id="stats">
+                       <p id="stats_name"></p>
+                       <p id="base_state"></p>
+                       <p id="effort"></p>
+                   </div>
+                </div>
+
+                <div id="stats_five">
+                   <div id="stats">
+                       <p id="stats_name"><p>
+                       <p id="base_state"></p>
+                       <p id="effort"></p>
+                   </div>
+                </div>
+
+                <div id="stats_six">
+                  <div id="stats">
+                      <p id="stats_name"></p>
+                      <p id="base_state"></p>
+                      <p id="effort"></p>
+                  </div>
+                </div>
+            </div>
+            <aside>
+              <div id="p_card">
+                  <div id="card">
+                      <div id="content">
+                         <img id="c_pokemon">
+                         <p id="p_name"></p>
+                      </div>
+                 </div>
+                 <div id="shadow"></div>
+              </div>
+            </aside>
+        </div>
+     </div>
+    </body>
+    <script type="application/javascript" src="pokemon_battle.js"></script>
+    <script type="application/javascript" src="card_list.js"></script>
+</html>
